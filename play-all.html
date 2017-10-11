@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Play All Videos</title>
+    <meta name="robots" content="noindex, follow">
+  
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <header>
+        <h1>Play All Videos</h1>
+      </header>
+      <div class="nav" role="navigation">
+        <a href="/" class="button">Home</a>
+        <a href="help-us" class="pseudo button">Help Us</a>
+        <a href="links" class="pseudo button">Links</a>
+      </div>
+
+      <video id="player" src="" autoplay="" controls=""></video>
+      <h2>Select a different song to start:</h2>
+      <div>
+        
+          <button class="pseudo" data-video="Hebrews 12.mp4">Hebrews 12</button>
+        
+          <button class="pseudo" data-video="Hebrews 5.mp4">Hebrews 5</button>
+        
+          <button class="pseudo" data-video="I Peter 4.mp4">I Peter 4</button>
+        
+          <button class="pseudo" data-video="II Chronicles 16.mp4">II Chronicles 16</button>
+        
+          <button class="pseudo" data-video="Isaiah 54.mp4">Isaiah 54</button>
+        
+          <button class="pseudo" data-video="Isaiah 55.mp4">Isaiah 55</button>
+        
+          <button class="pseudo" data-video="John 14.mp4">John 14</button>
+        
+          <button class="pseudo" data-video="John 15.mp4">John 15</button>
+        
+          <button class="pseudo" data-video="Joshua 1.mp4">Joshua 1</button>
+        
+          <button class="pseudo" data-video="Luke 9.mp4">Luke 9</button>
+        
+          <button class="pseudo" data-video="Matthew 25.mp4">Matthew 25</button>
+        
+          <button class="pseudo" data-video="Philippians 4.mp4">Philippians 4</button>
+        
+          <button class="pseudo" data-video="Psalm 103.mp4">Psalm 103</button>
+        
+          <button class="pseudo" data-video="Psalm 112.mp4">Psalm 112</button>
+        
+          <button class="pseudo" data-video="Psalm 113.mp4">Psalm 113</button>
+        
+          <button class="pseudo" data-video="Psalm 114.mp4">Psalm 114</button>
+        
+          <button class="pseudo" data-video="Psalm 119 Ain.mp4">Psalm 119 Ain</button>
+        
+          <button class="pseudo" data-video="Psalm 119 Aleph.mp4">Psalm 119 Aleph</button>
+        
+          <button class="pseudo" data-video="Psalm 119 Mem.mp4">Psalm 119 Mem</button>
+        
+          <button class="pseudo" data-video="Psalm 119 Teth.mp4">Psalm 119 Teth</button>
+        
+          <button class="pseudo" data-video="Psalm 123.mp4">Psalm 123</button>
+        
+          <button class="pseudo" data-video="Psalm 127.mp4">Psalm 127</button>
+        
+          <button class="pseudo" data-video="Psalm 128.mp4">Psalm 128</button>
+        
+          <button class="pseudo" data-video="Psalm 133.mp4">Psalm 133</button>
+        
+          <button class="pseudo" data-video="Psalm 150.mp4">Psalm 150</button>
+        
+          <button class="pseudo" data-video="Psalm 2.mp4">Psalm 2</button>
+        
+          <button class="pseudo" data-video="Psalm 41.mp4">Psalm 41</button>
+        
+          <button class="pseudo" data-video="Psalm 73.mp4">Psalm 73</button>
+        
+          <button class="pseudo" data-video="Psalm 9.mp4">Psalm 9</button>
+        
+          <button class="pseudo" data-video="Romans 2.mp4">Romans 2</button>
+        
+          <button class="pseudo" data-video="The Beatitudes.mp4">The Beatitudes</button>
+        
+          <button class="pseudo" data-video="True Wisdom.mp4">True Wisdom</button>
+        
+      </div>
+    </div>
+  
+    <footer class="page-footer">
+      <p><small>
+        &copy; 2017 Harmony of the Word<br>
+        Web Design by <a href="http://www.ryanzim.com/" target="_blank">Ryan Zimmerman</a>
+      </small></p>
+    </footer>
+    <a id="backTop" href="#top" class="button white">Back to top</a>
+    
+    <script>
+    var songs = [{"title":"Hebrews 12","video":"Hebrews 12.mp4","id":"Hebrews_12"},{"title":"Hebrews 5","video":"Hebrews 5.mp4","id":"Hebrews_5"},{"title":"I Peter 4","video":"I Peter 4.mp4","id":"I_Peter_4"},{"title":"II Chronicles 16","video":"II Chronicles 16.mp4","id":"II_Chronicles_16"},{"title":"Isaiah 54","video":"Isaiah 54.mp4","id":"Isaiah_54"},{"title":"Isaiah 55","video":"Isaiah 55.mp4","id":"Isaiah_55"},{"title":"John 14","video":"John 14.mp4","id":"John_14"},{"title":"John 15","video":"John 15.mp4","id":"John_15"},{"title":"Joshua 1","video":"Joshua 1.mp4","id":"Joshua_1"},{"title":"Luke 9","video":"Luke 9.mp4","id":"Luke_9"},{"title":"Matthew 25","video":"Matthew 25.mp4","id":"Matthew_25"},{"title":"Philippians 4","video":"Philippians 4.mp4","id":"Philippians_4"},{"title":"Psalm 103","video":"Psalm 103.mp4","id":"Psalm_103"},{"title":"Psalm 112","video":"Psalm 112.mp4","id":"Psalm_112"},{"title":"Psalm 113","video":"Psalm 113.mp4","id":"Psalm_113"},{"title":"Psalm 114","video":"Psalm 114.mp4","id":"Psalm_114"},{"title":"Psalm 119 Ain","video":"Psalm 119 Ain.mp4","id":"Psalm_119_Ain"},{"title":"Psalm 119 Aleph","video":"Psalm 119 Aleph.mp4","id":"Psalm_119_Aleph"},{"title":"Psalm 119 Mem","video":"Psalm 119 Mem.mp4","id":"Psalm_119_Mem"},{"title":"Psalm 119 Teth","video":"Psalm 119 Teth.mp4","id":"Psalm_119_Teth"},{"title":"Psalm 123","video":"Psalm 123.mp4","id":"Psalm_123"},{"title":"Psalm 127","video":"Psalm 127.mp4","id":"Psalm_127"},{"title":"Psalm 128","video":"Psalm 128.mp4","id":"Psalm_128"},{"title":"Psalm 133","video":"Psalm 133.mp4","id":"Psalm_133"},{"title":"Psalm 150","video":"Psalm 150.mp4","id":"Psalm_150"},{"title":"Psalm 2","video":"Psalm 2.mp4","id":"Psalm_2"},{"title":"Psalm 41","video":"Psalm 41.mp4","id":"Psalm_41"},{"title":"Psalm 73","video":"Psalm 73.mp4","id":"Psalm_73"},{"title":"Psalm 9","video":"Psalm 9.mp4","id":"Psalm_9"},{"title":"Romans 2","video":"Romans 2.mp4","id":"Romans_2"},{"title":"The Beatitudes","video":"The Beatitudes.mp4","id":"The_Beatitudes"},{"title":"True Wisdom","video":"True Wisdom.mp4","id":"True_Wisdom"}];
+    </script>
+    <script src="js/play-all.js"></script>
+  
+  </body>
+</html>
+
